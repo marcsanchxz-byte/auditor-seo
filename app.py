@@ -13,7 +13,7 @@ st.subheader("Pega los enlaces y obtén tus porcentajes para la plantilla")
 with st.form("auditoria_form"):
     url_maps = st.text_input("1. URL de Google Maps de la ficha:")
     url_web = st.text_input("2. URL de la página Web del negocio (ej: https://web.com):")
-    enviar = st.form_submit_with_button_click("Auditar Negocio")
+    enviar = st.form_submit_button("Auditar Negocio")
 
 if enviar:
     if not url_maps or not url_web:
